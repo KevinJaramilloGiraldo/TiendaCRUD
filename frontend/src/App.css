@@ -1,0 +1,168 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedores */
+div {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 2000px;
+  text-align: center;
+}
+
+/* Titulos */
+h2 {
+  color: #1565c0;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logout-button{
+  margin-bottom: 25px;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Links */
+a {
+  color: #1e88e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard - Contenedor principal */
+.dashboard-container {
+  width: 90%;
+  max-width: 800px; /* Ajusta el tamaño máximo del contenedor */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden; /* Evita desbordamientos */
+}
+
+/* Dashboard - Tabla responsive */
+.dashboard-table-container {
+  overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+  margin-top: 20px;
+}
+
+/* Ajustes en la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Asegura que la tabla no se comprima demasiado */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #bbdefb;
+  text-align: center;
+  white-space: nowrap; /* Evita que el contenido se divida en varias líneas */
+}
+
+th {
+  background: #42a5f5;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #e3f2fd;
+}
+
+tr:hover {
+  background: #bbdefb;
+}
+
+/* Ajustes para los botones en la tabla */
+.dashboard-table-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dashboard-table-actions button {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
